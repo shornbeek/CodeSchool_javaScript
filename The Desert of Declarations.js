@@ -1,6 +1,6 @@
 //CodeSchool.com
 //JavaScript  The Desert of Declaration Level 4
-//Stephen Hornbeek
+//Stephen Hornbeek 2018
 
 
 //A Basic Multiplication Function
