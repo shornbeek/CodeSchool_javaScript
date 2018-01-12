@@ -6,7 +6,7 @@
 
 	//1.2Changing Declarations to Expressions
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 function forestFright() {
   var toAlert = "";
   for (var i = 0; i < 5; i++) {
@@ -27,7 +27,7 @@ toAlert = toAlert + "Lions, Tigers, and Bears, Oh My!!\n";
 
 	//1.3Using Function Expressions with Parameters
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 
 var people = /*//fill this in//*/;
 var rain = /*//fill this in//*/;
@@ -59,7 +59,7 @@ var fear = fearGenerated(people, rain, sharks);
 
 	//1.4 Displaying Function Contents
 
-//Code Given to Start the challenge - No Starting Code this challenge  
+//Code given to start the challenge - No Starting Code this challenge  
 
 //Soultion: The goal is to call the function with an alert box. alert (name of function);
 alert (fearGenerated);
@@ -68,7 +68,7 @@ alert (fearGenerated);
 
 	//1.5 Functions as Parameters, Arguments and Return Values
 
-//Code Given to Start the challenge
+//Code given to start the challenge
   var fear = fearGenerated(numPeeps, rainInInches, numSharks);
 
   var fearMessage = function() {
@@ -108,7 +108,7 @@ function confirmRide(confirmToGo) {
 
 	//1.7 Using Map With Arrays
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 var passengers = [ ["Thomas", "Meeks"],
                    ["Gregg", "Pollack"],
                    ["Christine", "Wong"],
@@ -123,7 +123,7 @@ var modifiedNames = passengers.map(function(arrayCell) {
 
 	//1.8 Using Map With Arrays II
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 var modifiedNames = [ "Thomas Meeks",
                       "Gregg Pollack",
                       "Christine Wong",
@@ -165,7 +165,7 @@ var puzzlers = [
 
 	//1.11 Choose Their Own Adventure 
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 function adventureSelector(userChoice) {
   // return anonymous functions inside conditional blocks
   
@@ -199,7 +199,7 @@ adventureSelector(3)();
 
 	//1.13 Queue Builder
 
-//Code Given to Start the challenge 
+//Code given to start the challenge
 var puzzlers = [
   function(a) { return 8 * a - 10; },
   function(a) { return (a - 3) * (a - 3) * (a - 3); },
@@ -234,7 +234,7 @@ alert(applyAndEmpty(start, puzzlers));
 
 	//1.14 Immediately-Invoked Puzzler
 
-//Code Given to Start the challenge
+//Code given to start the challenge
 var puzzlers = [
   function(a) { return 8 * a - 10; },
   function(a) { return (a - 3) * (a - 3) * (a - 3); },

@@ -55,3 +55,6 @@ for( currentGen >= 5 ; currentGen <= totalGen ; currentGen++ ){
   console.log ("Generator #"+ currentGen + " is on, adding 124 MW, for a total of "+ totalMW + " MW!");
 }
 
+
+//End Level
+

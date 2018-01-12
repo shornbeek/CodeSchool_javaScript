@@ -1,7 +1,7 @@
 //CodeSchool.com
 //JavaScript  Javascript RoadTrip Part 3
 //3.0 Hoisting Hills Level 3
-//Stephen Hornbeek 2018
+//Stephen Hornbeek 2018 
 
 
 //End Level
