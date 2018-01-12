@@ -296,6 +296,193 @@ function dontPanic(location) {
 dontPanic(lighthouseRock);
 
 
+	//4.11 Functions as Properties I
+
+//Code given to start the challenge
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  
+
+};
+
+
+//Solution: location is now inside the function so we can call it this. The function addRanger was updated and the function was placed inside 
+//the : addRanger is now an internal function.
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  addRanger: function (name, skillz, station){
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+
+
+
+	//4.12 Calling Function Properties I
+
+//Code given to start the challenge
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  addRanger: function (name, skillz, station){
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+//Solution added addRanger function to lighthouseRock with the specific person and varables added
+
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  addRanger: function (name, skillz, station){
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+// call the addRanger method on lighthouseRock
+lighthouseRock.addRanger("Jordan Wade", "dual-wield hand crossbow", 4);
+
+
+
+	//4.13 Functions as Properties II
+
+//Code given to start the challenge
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  ranger4: {name: "Jordan Wade", skillz: "dual-wield hand crossbow", station: 4},
+  addRanger: function(name, skillz, station) {
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+// create addBulb function property here
+
+//Solution lighthouseRock was called and addBuld = function / method was declared with the preamiters name, wattage. this was used because 
+//were inside the lighthouseRock var / local scope. push was used to add name and wattage to the main array superBlinders
+var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
+
+var lighthouseRock = {
+  gateClosed: true,
+  weaponBulbs: superBlinders,
+  capacity: 30,
+  secretPassageTo: "Underwater Outpost",
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  ranger4: {name: "Jordan Wade", skillz: "dual-wield hand crossbow", station: 4},
+  addRanger: function(name, skillz, station) {
+    this.numRangers++;
+    this["ranger" + this.numRangers] = {
+      name: name,
+      skillz: skillz,
+      station: station
+    };
+  }
+};
+
+// create addBulb function property here
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+  
+};
+
+
+	//4.14 Calling Function Properties II
+
+//Code given to start the challenge
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+};
+
+// call addBulb and pass in the correct arguments
+
+//Solution: lighthouseRock was called and add Bulb verable is used to push the name and wattage information onto the main array
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+};
+
+// call addBulb and pass in the correct arguments
+lighthouseRock.addBulb("Blasterbright",5000);
+lighthouseRock.addBulb("Sight Slayer",1800);
+lighthouseRock.addBulb("Burner of Souls",7500);
+
+
+
+//End Level
+
+
+
+
+
+
+
+
+
+
 
 
 
