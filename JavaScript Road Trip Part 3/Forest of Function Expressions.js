@@ -1,6 +1,6 @@
 //CodeSchool.com
 //JavaScript  Javascript RoadTrip Part 3
-//1. Forest of FUnction Expressions Level 1
+//1. Forest of Function Expressions Level 1
 //Stephen Hornbeek 2018
 
 
