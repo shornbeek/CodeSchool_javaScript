@@ -548,7 +548,7 @@ listGuns(rockSpearguns);
 
 
 
-	//4.18 Enumeration II
+	//4.19 Enumeration III
 
 //Code given to start the challenge
 var rockSpearguns = {
