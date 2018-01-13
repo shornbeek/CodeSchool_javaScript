@@ -472,6 +472,127 @@ lighthouseRock.addBulb("Burner of Souls",7500);
 
 
 
+  //4.17 Enumeration I
+
+  //Code given to start the challenge
+  var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+// build listGuns
+
+
+// call listGuns and pass in rockSpearguns
+
+  //Solution:
+  var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+// build listGuns
+var listGuns = function(guns) {
+  for (var speargun in guns) {
+    console.log(speargun);
+  }
+};
+
+// call listGuns and pass in rockSpearguns
+listGuns(rockSpearguns);
+
+//4.18 Enumeration II
+
+  //Code given to start the challenge
+  var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+function listGuns(guns) {
+  for (var speargun in guns) {
+    // modify the log message here
+    console.log(speargun);
+  }
+}
+
+listGuns(rockSpearguns);
+
+//Solution:
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+function listGuns(guns) {
+  for (var speargun in guns) {
+    // modify the log message here
+    console.log("Behold! " + speargun + ", with " +
+                guns[speargun]["heft"] + " heft!");
+  }
+}
+
+listGuns(rockSpearguns);
+
+
+
+	//4.18 Enumeration II
+
+//Code given to start the challenge
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+// convert listGuns function
+function listGuns(guns) {
+  for (var speargun in guns) {
+    console.log("Behold! " + speargun + ", with " +
+                guns[speargun]["heft"] + " heft!");
+  }
+}
+
+// call listGuns using bracket notation on rockSpearguns
+listGuns(rockSpearguns);
+
+//Solution:
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+rockSpearguns["listGuns"] = function() {
+  for (var property in this) {
+    if (this[property]["heft"] != undefined) {
+      console.log("Behold! " + property + ", with " +
+                  this[property]["heft"] + " heft!");
+    }
+  }
+};
+
+rockSpearguns["listGuns"]();
+
+
+
+
 //End Level
 
 
